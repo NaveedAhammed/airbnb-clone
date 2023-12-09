@@ -1,0 +1,259 @@
+.header {
+  width: 100%;
+  padding: 0 2.4rem;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border-light-color);
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  display: none;
+}
+
+.brandLogo {
+  width: 3.4rem;
+  height: 3.4rem;
+  display: none;
+}
+
+.brandName {
+  font-size: 2.2rem;
+  letter-spacing: -0.6px;
+  font-weight: 700;
+  color: var(--primary-color);
+  display: none;
+}
+
+.searchBarContainer {
+  width: fit-content;
+  flex: 1;
+}
+
+.searchBarWrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid var(--border-light-color);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 2px 0px,
+    rgba(0, 0, 0, 0.05) 0px 4px 12px 0px;
+}
+
+.searchBarWrapper:hover,
+.menu:hover,
+.menu:focus {
+  box-shadow: var(--box-shadow);
+}
+
+.bold,
+.light {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  display: none;
+  white-space: nowrap;
+}
+
+.bold {
+  border-left: 1px solid var(--border-light-color);
+  font-weight: 500;
+  color: inherit;
+  font-size: 1.4rem;
+}
+
+.light {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: var(--text-light-color);
+}
+
+.searchIcon {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.4rem;
+  background-color: var(--background-color);
+  color: var(--text-dark-color);
+  border-radius: 999px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.seller {
+  font-size: 1.4rem;
+  font-weight: 500;
+  display: inline-block;
+  padding: 1rem 1.6rem;
+  border-radius: 999px;
+  cursor: pointer;
+  letter-spacing: -0.3px;
+  display: none;
+  white-space: nowrap;
+}
+
+.seller:hover,
+.globeIcon:hover {
+  background: var(--light-grey-color);
+}
+
+.globeIcon {
+  width: 3.8rem;
+  height: 3.8rem;
+  padding: 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--border-light-color);
+  border-radius: 999px;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: all 0.2s;
+}
+
+.menuIcon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.profileIcon {
+  width: 2.8rem;
+  height: 2.8rem;
+  display: none;
+}
+
+.mini {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.miniBold {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--text-dark-color);
+}
+
+.miniWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-light-color);
+}
+
+.miniLight {
+  font-size: 1.1rem;
+  font-weight: 300;
+  white-space: nowrap;
+}
+
+@media (min-width: 320px) {
+  .navbar {
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 477px) {
+  .bold,
+  .light {
+    display: inline-block;
+  }
+  .mini {
+    display: none;
+  }
+  .searchBarWrapper {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 799px) {
+  .header {
+    padding: 0 4rem;
+  }
+  .brand {
+    display: flex;
+  }
+  .brandLogo,
+  .profileIcon {
+    display: inline-block;
+  }
+  .menu {
+    padding: 0.8rem 1.2rem;
+    color: var(--text-light-color);
+  }
+  .seller {
+    display: block;
+  }
+  .globeIcon {
+    display: block;
+  }
+  .searchBarContainer {
+    flex: unset;
+  }
+  .searchBarWrapper {
+    width: fit-content;
+    flex-direction: row !important;
+  }
+  .searchIcon {
+    width: 3rem;
+    height: 3rem;
+    padding: 0.8rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border-radius: 999px;
+  }
+  .bold {
+    border-right: 1px solid var(--border-light-color);
+    border-left: none;
+  }
+  .bold,
+  .light {
+    display: inline-block;
+  }
+  .mini {
+    display: none;
+  }
+}
+
+@media (min-width: 949px) {
+  .searchBarWrapper {
+    transform: translateX(25%);
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 1127px) {
+  .brandName {
+    display: block;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header {
+    padding: 0 8rem;
+  }
+}

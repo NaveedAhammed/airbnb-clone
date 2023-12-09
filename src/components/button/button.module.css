@@ -1,0 +1,38 @@
+.btn {
+  width: 100%;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  font-family: inherit;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.outline {
+  background-color: var(--background-color);
+  color: var(--text-dark-color);
+  border: 1px solid var(--text-dark-color);
+}
+
+.outline:hover {
+  background-color: var(--light-grey-color);
+}
+
+.full:hover {
+  opacity: 0.9;
+}
+
+.full {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border: 1px solid var(--primary-color);
+}
+
+.icon {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}

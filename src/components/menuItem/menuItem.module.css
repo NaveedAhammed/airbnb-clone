@@ -1,0 +1,12 @@
+.menuItem {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.menuItem:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: var(--text-dark-color);
+}

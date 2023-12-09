@@ -1,0 +1,19 @@
+.container {
+  width: 100%;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.input {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--background-color);
+  border-radius: 1rem;
+  border: 1.5px solid var(--dark-grey-color);
+  font-family: inherit;
+}
+
+.input:disabled {
+  opacity: 70;
+  cursor: not-allowed;
+}
